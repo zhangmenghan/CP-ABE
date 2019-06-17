@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+	<class name="cpabe.entity.FileDownloadInfo" table="tb_download_info">
+		<id name="file_name" column="file_name" type="string"/>
+		<property name="download_staff_id" column="download_staff_id" />
+		<property name="download_time" column="download_time" />
+		<property name="download_times" column="download_times" />
+	</class>	
+</hibernate-mapping>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+	<class name="cpabe.entity.AttributeSet" table="tb_attr" >
+		<id name="attr_id" column="id" type="int">
+			<generator class="native"></generator>
+		</id>
+		<property name="attr_1" column="attr_1" />
+		<property name="attr_2" column="attr_2" />
+		<property name="attr_3" column="attr_3" />
+		<property name="attr_4" column="attr_4" />
+		<property name="attr_5" column="attr_5" />
+		<property name="attr_6" column="attr_6" />
+		<property name="attr_7" column="attr_7" />
+		<property name="attr_8" column="attr_8" />
+	</class>	
+</hibernate-mapping>

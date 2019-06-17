@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entity">
+	<class name="cpabe.entity.FileInfo" table="tb_file_info">
+		<id name="id" column="id" type="int">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="file_name" />
+		<property name="upload_staff_id" column="upload_staff_id" />
+		<property name="upload_date" column="upload_date" />
+		<property name="policy" column="policy" />
+		<property name="profile" column="profile" />
+		<property name="download_times" column="download_times" />
+		<property name="filesize" column="filesize" />
+		
+	</class>
+</hibernate-mapping>

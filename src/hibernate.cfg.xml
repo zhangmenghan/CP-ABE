@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 配置与数据库相关的属性 -->
+		<property name="connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="connection.url">
+			jdbc:mysql://localhost:3306/cp_abe?characterEncoding=UTF-8
+		</property>
+		<property name="connection.username">
+			root
+		</property>
+		<property name="connection.password">
+			root
+		</property>
+		<property name="dialect">
+			org.hibernate.dialect.MySQL5Dialect
+		</property>
+		<property name="show_sql">
+			false
+		</property>
+	<!-- 
+		<property name="hbm2ddl.auto">
+			create
+		</property>
+	 -->
+		
+		<!-- 事务自动提交 -->
+		<property name="connection.autocommit">true</property> 
+		
+		<!-- 配置映射文件的位置
+		<mapping resource="cpabe\entity\Staff.hbm.xml"/>
+		<mapping resource="cpabe\entity\FileInfo.hbm.xml"/>
+		<mapping resource="cpabe\entity\FileDownloadInfo.hbm.xml"/>
+		<mapping resource="cpabe\entity\AttributeSet.hbm.xml"/>
+	 -->
+	</session-factory>
+</hibernate-configuration>
